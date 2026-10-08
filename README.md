@@ -7,9 +7,9 @@
 
 | 구성요소 | 버전 |
 |---|---|
-| NestAdsPartnerCovi | `0.0.1` |
-| NestAdsPartnerCore (전이 의존) | `0.0.1` 이상 |
-| COVI 환경 | host 앱 `NestAds.environment` 기준 (미설정 시 채널 기본값 `prod`) |
+| NestAdsPartnerCovi | `1.0.0` |
+| NestAdsPartnerCore (전이 의존) | `1.0.0` 이상 |
+| COVI 환경 | `CoviPartnerAdapter.environment` 지정값 → 메인 SDK 환경 → `prod` 순 (아래 "환경 설정") |
 
 ## 설치 (Swift Package Manager)
 
@@ -25,7 +25,7 @@ https://github.com/wisebirds/nestads-partner-ios-sdk-covi
 dependencies: [
     .package(
         url: "https://github.com/wisebirds/nestads-partner-ios-sdk-covi",
-        from: "0.0.1"
+        from: "1.0.0"
     )
 ]
 ```
@@ -84,8 +84,7 @@ CoviPartnerAdapter.environment = .dev
 
 ## 문의 및 지원
 
-- 파트너 계약 및 기술 지원: Wisebirds NestAds 파트너십 팀
-- Bug report: 내부 이슈 트래커
+- Wisebirds SDK팀
 
 ## 라이선스
 
